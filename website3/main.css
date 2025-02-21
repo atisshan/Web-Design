@@ -1,0 +1,432 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+}
+
+
+.header{
+    min-height:100vh;
+    width:100%;
+    background:linear-gradient(rgba(21, 25, 26, 0.7),rgba(80, 108, 112, 0.7)),url(images2/clothingstore.png);
+    background-position:center;
+    background-size: cover;
+}
+
+.title-text{
+
+width:90%;
+position:absolute;
+color:#fff;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+}
+.title-text p{
+margin-top:40px;
+margin-bottom:33px;
+font-size:20px;
+
+}
+.title-text h1{
+    margin-bottom:20px;
+    font-size:60px;
+    font-weight: bold;
+   
+}
+.btn{
+    border:1px solid #fff;
+    color:aquamarine;
+    text-decoration:none;
+    position:relative;
+    font-size:17px;
+    display:inline-block;
+    margin-top: 24px;
+    
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 42px;
+    padding-left:44px;
+    background:transparent;
+    cursor:pointer;
+
+
+
+}
+.btn:hover{
+    background:#fa2f20;
+    border:1px solid #fa2f20;
+    transition:1s;
+
+}
+nav{
+    justify-content: space-between;
+    align-items:center;
+    
+    padding:2% 2%
+}
+
+
+.nav-links{
+    flex:1;
+text-align:right;
+position:absolute;
+
+}
+.nav-links ul li{
+    display:inline-block;
+    padding:8px 12px;
+    position:relative;
+}
+.nav-links ul li a{
+    color:#fff;
+    font-size:14px;
+    font-family:'Poppins',sans-serif;
+    text-decoration: none;
+}
+.nav-links ul li::after{
+    content:'';
+    background:#fa2f20;
+    width:0%;
+    display:block;
+    height:2px;
+    margin:auto;
+    transition:0.9s;
+    
+}
+.nav-links ul li:hover::after{
+    width:100%;
+
+}
+.products{
+    width:100%;
+    text-align:center;
+    padding:12px 20px;
+    margin:12px 12px;
+    background:linear-gradient(rgba(21, 25, 26, 0.7),rgba(80, 108, 112, 0.7)),url(images2/clothingstore.png);
+
+    
+
+
+}
+.products h1{
+    margin-bottom:20px;
+    font-size:60px;
+    font-weight: bold;
+    font-family:'poppins',sans-serif;
+    color:#fff;
+}
+.products p{
+    margin-top:40px;
+margin-bottom:33px;
+font-size:20px;
+font-family:'poppins',sans-serif;
+color:#fff;
+
+
+
+}
+.products-img{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+.picha{
+    
+    flex-basis:32%;
+    border-radius:7px;
+    position:relative;
+    
+
+}
+.picha img{
+    width:100%;
+    height:100%;
+
+}
+.layer{
+background-color:transparent;;
+top:0;
+left:0;
+position:absolute;
+width:100%;
+height:100%;
+transition:1s;
+
+}
+.layer:hover{
+    background:rgba(226,0,0,0.7);
+    
+    
+}
+.layer p{
+    bottom:0;
+    left:50%;
+    color:#fff;
+    transform:translateX(-50%);
+    transition:0.5s;
+    width:100%;
+    opacity:0;
+    position:absolute;
+}
+.layer:hover p{
+    bottom:49%;
+    opacity:1;
+}
+.testimonials{
+    width:100%;
+    margin:auto;
+    align-items:center;
+    justify-content: space-between;
+    
+
+}
+.row{
+    display:flex;
+    justify-content:space-between;
+    
+}
+.testimonial-col{
+    flex-basis:44%;
+    text-align:center;
+    background:bisque;
+    margin-right:5%;
+    border-radius:10px;
+    padding-right:12px;
+    padding-left:16px;
+    margin-bottom:12px;
+    text-align:left;
+    
+    
+
+
+    
+
+
+}
+.testimonial-col img{
+    height:40px;
+    border-radius:50%;
+    margin-left:5px;
+    margin-right:2px;
+    
+
+}
+.testimonial-col p{
+    text-align:left;
+    color:#fff;
+    margin-bottom:12px;
+}
+.testimonial-col:hover{
+    cursor:pointer;
+    background:bisque;
+    opacity:1;
+    
+}
+.testimonial-col a{
+    text-decoration:none;
+    text-align:center;
+
+}
+#about{
+width:auto;
+align-items:center;
+margin-top:20px;
+text-align:center;
+
+}
+#about h1::after{
+width:0%;
+background:#fa2f20;
+height:4px;
+content:'';
+display:block;
+margin:auto;
+transition:0.9s;
+opacity:0;
+}
+#about h1:hover::after{
+width:50%;
+cursor:pointer;
+opacity:1;
+}
+
+
+.aboutus{
+
+margin-top:10px;
+margin-bottom:20px;
+text-align:center;
+}
+ #about h1{
+    font-size:44px;
+}
+.aboutus p{
+    
+    text-align:left;
+    margin-left:20px;
+    font-weight:bold;
+    font-family: 'Poppins',sans-serif;
+
+    font-size:17px;
+}
+.hours{
+    display:inline-block;
+    
+    margin-top:26px;
+}
+.hours h3{
+    margin-top:10px;
+    font-size:24px;
+}
+.hours p{
+    margin-bottom:5px;
+    font-size:17px;
+}
+#footer{
+    width:100%;
+    margin:auto;
+
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:30px;
+    background:lightgray;;
+    padding-top:30px;
+    padding-bottom:30px;
+    
+    
+    
+}
+#footer img{
+    width:100%;
+    height:100%;
+}
+
+#footer h1{
+    font-size:44px;
+}
+.end-col p{
+    font-size:17px;
+    font-weight:bold;
+    margin-left:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+
+    
+
+}
+#footer h1::after{
+    width:0%;
+    background:#fa2f20;
+    height:4px;
+    content:'';
+    display:block;
+    margin:auto;
+    transition:0.9s;
+    opacity:0;
+}
+#footer h1:hover::after{
+    width:50%;
+    cursor:pointer;
+    opacity:1;
+
+
+
+}
+.end-col{
+    flex-basis:44%;
+    text-align:center;
+    
+    margin-right:5%;
+    border-radius:10px;
+    padding-right:12px;
+    padding-left:16px;
+    margin-bottom:12px;
+    text-align:left;
+    
+}
+
+.end-col a{
+    text-decoration:none;
+    transition:0.5s;
+    
+    
+}
+.end-col a:hover{
+    color:#fa2f20;
+    cursor:pointer;
+}
+.desc{
+display:inline-block;
+}
+.email{
+    padding-top:12px;
+    padding-bottom:12px;
+    padding-right:6px;
+    padding-left:6px;
+    margin-bottom:12px;
+}
+.text{
+    padding-top:12px;
+    padding-bottom:12px;
+    padding-right:6px;
+    padding-left:6px;
+    margin-bottom:12px;
+
+}
+.button{
+    border-radius:5px;
+    background:#fa2f20;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:32px;
+    padding-right:32px;
+    border-color:#fa2f20;
+    color:white;
+    margin-top:12px;
+    transition:0.9s;
+}
+.button:hover{
+    background:#fa2f20;
+    color:white;
+    cursor:pointer;
+    opacity:0.6;
+
+
+}
+.issue{
+    padding-top:42px;
+    padding-bottom:42px;
+    padding-right:50px;
+    padding-left:50px;
+    margin-bottom:12px;
+    
+
+
+}
+.end{
+    display:flex;
+    align-items: left;
+    margin-right:990px;;
+    margin-top:20px;
+}
+.title-text{
+    margin-top:70px;
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+

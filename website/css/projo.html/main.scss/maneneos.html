@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title>website 22</Title>
+    <style>
+        span{
+            color:tomato;
+            font-weight:bold;
+            font-family:Georgia;
+            font-size:19px;
+
+        }
+        h1{
+            display: inline-block;
+
+        }
+    
+        
+        p{
+            font-family:Georgia;
+            font-size:16px;
+            color:black;
+
+
+        }
+.first{
+    background-color:none;
+    padding-right:0.2em;
+    padding-left:0.2em;
+    padding-bottom:0.2em;
+    padding-top:0.2em;
+    vertical-align: middle;
+     border-color:blue;
+}
+.second{
+    background-color:none;
+    padding-right:0.2em;
+    padding-left:0.2em;
+    padding-bottom:0.2em;
+    padding-top:0.2em;
+    vertical-align: middle;
+   border-color:blue;
+}
+
+    .linky{
+color:green;
+ font-size:14px;
+ font-family:Georgia; 
+    }  
+    .linky:hover{
+        color:red;
+    }
+.linky:active{
+    color:lightgreen;
+}
+    .link2{
+        color:green;
+        font-size:14px;
+        font-family:Georgia;
+    }
+    .link2:hover{
+        color:red;
+
+    }
+    .link2:active{
+        color:lightgreen;
+    }
+    h2{
+        color:lightslategray;
+        font-family:Georgia;
+        text-shadow:0.2em;
+
+    }
+    .shop{
+        background-color:lightsalmon;
+        color:white;
+        padding-top:0.2em;
+        padding-bottom:0.2em;
+        border-radius:1.5em;
+        border-color:lightsalmon;
+        transition:background-color 1s,color 1s;
+        
+    }
+    .shop:hover{
+        background-color:lightgrey;
+        border-color:lightgrey;
+        opacity:1.0;
+
+    }
+    .sign{
+        margin-left:1000px;
+    }
+    .image{
+        color:white;
+    }
+    .you{
+        background-color:lightsalmon;
+        color:white;
+        border-radius: 0.6em;
+        border-color:lightsalmon;
+        padding-left:1.4em;
+        padding-right:1.4em;
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+        margin-top: 100px;
+        transition: background-color 1s,color 1s;
+        
+
+    }
+    .you:hover{
+        opacity:0.9;
+        background-color: lightgray;
+        border-color:lightgray;
+    }
+.one{
+    margin-top: 14px;
+    padding-top 10px; 
+    padding-bottom:10px ;
+    padding-right:10px ;
+    padding-left:10px ;
+}
+.two{
+    margin-top: 14px;
+    padding-top 10px; 
+    padding-bottom:10px ;
+    padding-right:10px ;
+    padding-left:10px ;
+
+}
+.three{
+    margin-top: 14px;
+    padding-top :10px; 
+    padding-bottom:10px ;
+    padding-right:10px ;
+    padding-left:10px ;
+}
+    </style>
+
+</head>
+<body style="background: color 1%;>
+    <div >
+        <h1 ><span>GreatBegginnings</span></h1>
+    
+    
+        <h1  class="sign"><span>SignUp</span></h1>
+    </div>
+    <div> 
+        <p>Have you joined the greatest and littest online shopping in the world</p>
+        <p id="demo">Shipping is free</p>
+       
+        
+       <button class="shop" type="button" onclick ="myFunction()">Shop Now!</button>
+    
+        <script class="error">
+            function myFunction(){
+                document.getElementById("demo").innerHTML="Sorry you have to sign in first!";
+                alert("You have to sign in first");
+            }
+        </script>
+        <img src=""alt="cute pic"/>
+    </div>
+   <div id="miss"> 
+    <p>Don't miss on the opportunity brought to you open handedly!</p>
+    <p>Ensure you have the most used and trusted app in shopping online at the comfort of your bed,house launging and all that</p>
+      
+
+   
+
+    <button  class="first"type="checkbox"></button>
+    <label for="message">Ensure you are not a robot</label>
+    
+    
+    <p>click the button below to ensure that you agree at the terms</p>
+    <button class="second" type="checkbox"onclick="Myfunction2()"></button>
+    <label for="message">I Agree at the terms and conditions </label> 
+   
+</div>
+<section id="try">
+<div>
+<input class="one"type="text"placeholder="Enter your First name"/>
+</div>
+<div>
+    <input  class="two"type="text"placeholder="Enter your Second name"/>
+
+</div>
+<div>
+    <input class="three"type="Email"placeholder="Enter your email address"/>
+</div>
+</section>
+<div>
+ <button class="you"type="button" onclick="Mybutton()">Login</button>
+ <button class="you"type="button"onclick="sign()">SignIn</button>
+</div>
+
+<script>
+    function Myfunction2(){
+    document.getElementById("miss").style.display="none";
+    }
+</script>
+<script class="image">
+    function Mybutton(){
+        document.getElementById("end").innerHTML="Sorry you have to sign in first";
+        prompt=("Please try again");
+    }
+    
+</script>
+<script>
+    function sign(){
+        document.getElementById("try").style.display="none";
+    }
+</script>
+<div>
+   <footer id="end">
+     <P>For more information you can find us at our social handles</P>
+    <h2>CONTACTS</h2>
+    <p><a class="linky" href=Twitter:@greatthings>Twitter:@greatthings</a></p>
+    <p><a  class="link2"href=Instagram:@great_things>Instagram:@great_things</a></p>
+    <p>Telephone:0711527663</p>
+         
+            
+ </footer>
+</div>
+    
+</body>
+</html>

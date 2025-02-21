@@ -1,0 +1,21 @@
+
+body{
+    background:black;
+}
+.poster{
+    margin-right:25%;
+    border:5px solid red;
+    background-color:black;
+    padding:5px;
+    text-align:center;
+    color:red;
+    margin-left:25%;
+    margin-bottom:75px;
+    margin-top:75px;
+    width:20%;
+
+
+}
+.poster > img{
+    width:100%;
+}

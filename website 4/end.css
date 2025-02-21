@@ -1,0 +1,372 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'fantasy';
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background-color:rgba(8,151,151,0.7);
+}
+
+
+#intro{
+    background-image:linear-gradient(rgba(9, 41, 41, 0.7),rgba(51, 63, 61, 0.7)),url(images3/image3.jpg);
+    background-position:center;
+    background-size:cover;
+    width:100%;
+    height:100vh;
+    margin-bottom:20px;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.sidenav{
+    
+    flex:1;
+    text-align:center;
+
+}
+.sidenav ul li{
+    position: relative;
+    display:inline-block;
+    margin-right:5%;
+    margin-left:6%;
+    list-style:none;
+    margin-top: 1.5%;
+}
+.sidenav ul li a{
+    color:beige;
+    text-decoration: none;
+    font-family:'Poppins';
+    font-weight:bold;
+    padding:5px 8px;
+    font-size:18px;
+    
+}
+.sidenav ul li::after{
+    content:'';
+    width:0;
+    height:10%;
+    display:block;
+    background:rgba(27, 53, 53, 0.8);
+    position:absolute;
+    margin: auto;
+    transition:0.5s;
+    opacity:0;
+
+}
+.sidenav ul li:hover::after{
+    width:100%;
+    opacity:1;
+}
+
+.Description{
+    align-items: center;
+    text-align:center;
+    margin-top:10.9%;
+    
+
+}
+.Description h1{
+    margin-top:12px;
+    padding:6px 4px;
+    margin-bottom:8px;
+    color:beige;
+    font-family:'Georgia';
+    font-size: 36px;
+    font-weight:bold;
+    
+
+}
+.Description p{
+    margin-top: 8px;
+    color:beige;
+    font-family:'fantasy';
+    font-size: 20px;
+    margin-bottom:10%;
+}
+.Description h3{
+    margin-top:12px;
+    padding:6px 4px;
+    margin-bottom:10px;
+    color:beige;
+    font-family:'fantasy';
+   
+}
+.Description a{
+    border:1px solid;
+    color:beige;
+    text-decoration: none;
+    background-color:rgba(8, 151, 151, 0.7) ;
+    padding:8px 6px;
+    border-end-end-radius: 7px;
+    border-color:rgba(8, 151, 151, 0.7) ;
+    font-family: 'fantasy';
+    
+    
+}
+.Description a:hover{
+    transition:1s;
+    opacity:0.8;
+}
+#content{
+    width:100%;
+    text-align: center;
+    margin-top: 12%;
+
+}
+#content h3{
+    font-size: 40px;
+    font-family:Georgia;
+    font-weight: bold;
+    font-stretch: extra-expanded;
+    color:black;
+    margin-bottom: 21px;
+    margin-top:20%;
+    position: relative;
+    text-decoration: none;
+    transition:1s;
+}
+#content a:hover{
+    opacity:0.5;
+}
+#content p{
+    color:black;
+    font-size:24px;
+    font-family:'fantasy'
+}
+.column1{
+    display:flex;
+    flex-wrap:wrap;
+
+}
+.column2{
+    flex-basis: 50% ;
+    position:relative;
+    margin-bottom: 20px;
+    overflow:hidden;
+}
+.column2 img{
+    width:97%;
+    height:80vh;
+    
+}
+.layer{
+    position:absolute;
+    width:97%;
+    height:80vh;
+    top:0;
+    left:0;
+
+}
+.layer h3{
+    left:0;
+    bottom:45%;
+    transform: translateX(-50);
+    position:absolute;
+    opacity:0;
+    transition:1s;
+}
+.layer:hover h3{
+    left:45%;
+    opacity:1;
+}
+.Thoughts{
+    padding-top: 10px;
+    border-radius: 7.5px;
+    background:rgba(8, 151, 151, 0.7);
+    width:50%;
+    padding-bottom: 10px;
+    line-height:vertical;
+    margin-left:6px;
+    margin-bottom:6px;
+    display:flex;
+
+}
+.Thoughts p{
+    text-align: left;
+    font-size:14px;
+    font-family: 'fantasy';
+}
+.set img{
+    border-radius:30%;
+    width:20%;
+    height:50%;
+
+
+}
+#about{
+    width:100%;
+    margin-top:20px;
+    margin-bottom:12px;
+    text-align: center;
+    justify-content: center;
+
+
+}
+#about h3{
+    font-family: Georgia;
+    font-size:40px;
+    font-weight: bold;
+    margin-bottom:12px;
+    font-stretch: extra-expanded;
+    color:black;
+    margin-top:10%;
+
+}
+.column4{
+    text-align:center;
+
+}
+.column4 p{
+
+    font-size:14px;
+}
+.staff{
+    font-size:20px;
+    font-family:'fantasy';
+    text-align:center;
+    margin-left: 45%;
+    color:white;
+    margin-top:12px;
+}
+.button {
+    align-items:center;
+    color:white;
+    background:transparent;
+    border-radius:7.5px;
+    text-decoration:none;
+    padding-right:20px;
+    padding-top:15px;
+    padding-bottom:15px;
+    margin-left:10px;
+    font-size:20px;
+    transition:1s;
+}
+.button:hover{
+    opacity:0.9;
+    background:rgba(8, 151, 151, 0.7);
+
+}
+#contact{
+    width:100%;
+    text-align:center;
+    margin-bottom:12%;
+
+
+}
+#contact h3{
+    font-size:40px;
+    color:black;
+    font-family:Georgia;
+    font-weight:bold;
+    margin-bottom:12px;
+    margin-top:15%;
+    
+}
+.column3{
+    flex-basis:37%;
+
+}
+.column3 p{
+    font-weight:14px;
+}
+.more{
+    text-decoration: none;
+    color:white;
+    border:1px solid;
+    box-shadow: 0.4;
+    padding-right:34px;
+    padding-bottom:8px;
+    padding-top: 8px;
+    padding-left:34px;
+    border-radius:7.5px;
+    border-color:none;
+    transition:1s;
+}
+.more:hover{
+    background-color:rgba(9, 41, 41, 0.7);
+    opacity:0.5;
+
+}
+#about_2{
+    width:100%;
+    height:100vh;
+    background:linear-gradient(rgba(31, 59, 59, 0.7),rgba(179, 196, 196,0.7)),url(images3/searching\ tool.jpg.jpg);
+    justify-content:center;
+    text-align:center;
+}
+#about_2 h1{
+    color:white;
+    font-weight:bold;
+    font-family:Georgia;
+    font-size:45px;
+
+}
+.dec h2{
+    margin-top:10%;
+    margin-bottom:30px;
+    color:white;
+    font-size:30px;
+    font-family:'fantasy';
+
+}
+.dec h3{
+    font-family:'fantasy';
+    font-size:25px;
+    color:white;
+}
+.dec p{
+    margin-bottom:10%;
+    color:black;
+    font-family:'fantasy';
+    font-size:19px;
+    margin-top:17px;
+}
+.dec a{
+    text-decoration: none;
+    border:1px solid white;
+    padding:10px 20px;
+    background:rgba(64, 126, 126, 0.8);
+    color:white;
+    border-radius:7.5px;
+    margin-top:20%;
+    transition:1s;
+    
+}
+.dec a:hover{
+    background:rgba(27, 53, 53, 0.8);
+    color:rgba(8, 151, 151, 0.7)
+}
+
+
+.about-row img {
+    float:right;
+    width:45%;
+    height:100vh;
+    border-radius:15px;
+}
+.about-row > p{
+    text-align:center;
+    margin-left:24px;
+    color:white;
+    font-family:'fantasy';
+    font-size:20px;
+    margin-top:40px;
+
+}
+.about-col{
+    margin-left:10%;
+}
+.about-col ul li{
+    color:black;
+    font-size:20px;
+    font-family:'fantasy';
+    margin-left:13px;
+    margin-top:20px;
+
+}
